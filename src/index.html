@@ -27,7 +27,7 @@
               <a class="burger__link" href="#">EN / UA</a>
             </li>
             <li class="burger__item">
-              <a class="burger__link burger__link--is-active" href="#">BUY</a>
+              <a class="burger__link burger__link--is-active" href="#form">BUY</a>
             </li>
           </ul>
         </nav>
@@ -41,7 +41,7 @@
               <a class="desktop__link" href="#">EN / UA</a>
             </li>
             <li class="desktop__item">
-              <a class="desktop__link desktop__link--is-active" href="#">BUY</a>
+              <a class="desktop__link desktop__link--is-active" href="#form">BUY</a>
             </li>
           </ul>
 
@@ -52,7 +52,7 @@
         <div class="primary__content content">
           <h1 class="content__title">
             Futuristic Wireless Speaker
-            <a href="#" class="content__cart cart">
+            <a class="content__cart cart">
               <img
                 class="cart__img"
                 src="./images/cart.svg"
@@ -157,9 +157,13 @@
         src="./images/video_img.png"
         alt="main-video"
       >
-      <div class="video__play play">
+      <a
+        class="video__play play"
+        href="https://www.youtube.com/watch?v=M9ekKHqooGs"
+        target="_blank"
+      >
         <p class="video__icon">PLAY</p>
-      </div>
+      </a>
     </div>
     
     <section class="future-design container">
@@ -176,7 +180,7 @@
           This is a bunch of passionate people who are crazy enough
           to think they can challenge the industry with disruptive audio products.
         </p>
-        <a href="#" class="future-design__about">See more about us</a>
+        <a href="#form" class="future-design__about">See more about us</a>
       </div>
     </section>
 
@@ -370,11 +374,12 @@
       
     </section>
     <section class="questions container">
+      <a id="form"></a>
       <h2 class="questions__title">DO YOU HAVE ANY QUESTIONS?</h2>
       <form
-        action="#"
-        method="post"
+        action=""
         class="questions__form form"
+        onsubmit="setTimeout(function () { window.location.reload(); }, 10)"
       >
         <input
           class="form__email"
@@ -402,21 +407,33 @@
         <img src="./images/Vector.svg" alt="logo">
       </a>
       <div class="footer__app app">
-        <a class="app__face" href="#">
+        <a
+          class="app__face"
+          href="https://www.facebook.com/Kickstarter"
+          target="_blank"
+        >
           <img
             class="app__image"
             src="./images/facebook.svg"
             alt="facebook"
           >
         </a>
-        <a class="app__inst" href="#">
+        <a
+          class="app__inst"
+          href="https://www.instagram.com/kickstarter/?hl=ru"
+          target="_blank"
+        >
           <img
             class="app__image"
             src="./images/twitter.svg"
             alt="twit"
           >
         </a>
-        <a class="app__twit" href="#">
+        <a
+          class="app__twit"
+          href="https://twitter.com/kickstarter"
+          target="_blank"
+        >
           <img
             class="app__image"
             src="./images/instagram.svg"
@@ -431,7 +448,6 @@
         <img
           src="../src/images/top-arrow.svg"
           alt="arrow-top"
-          class="footer__start-button__anchor"
         >
       </a>
     </footer>
